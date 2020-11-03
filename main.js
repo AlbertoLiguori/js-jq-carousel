@@ -4,13 +4,13 @@ $(document).ready(function(){
 
   $(".prev").click(function(){
 
-    backward();
+    sliderPrev();
 
   })
 
   $(".next").click(function(){
 
-    forward();
+    sliderNext();
 
   })
 
@@ -19,13 +19,13 @@ $(document).ready(function(){
 
     if(event.which == 37){
 
-      backward();
+      sliderPrev();
 
     }
 
     else if(event.which == 39){
 
-      forward();
+      sliderNext();
 
     }
 

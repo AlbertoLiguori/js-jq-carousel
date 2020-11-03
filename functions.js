@@ -1,4 +1,4 @@
-function backward(){
+function sliderPrev(){
 
   var activeEl = $("img.active , .ico.active");
   var lastEl = $("img.last, .ico.last");
@@ -8,13 +8,15 @@ function backward(){
   if(activeEl.hasClass("first")){
     lastEl.addClass("active");
 
-  }else{
+  }
+
+  else{
     activeEl.prev().addClass("active");
   }
 
 }
 
-function forward(){
+function sliderNext(){
 
   var activeEl = $("img.active , .ico.active");
   var firstEl = $("img.first, .ico.first");
@@ -24,7 +26,9 @@ function forward(){
   if(activeEl.hasClass("last")){
     firstEl.addClass("active");
 
-  }else{
+  }
+
+  else{
     activeEl.next().addClass("active");
   }
 
