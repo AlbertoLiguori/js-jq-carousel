@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 
   //Arrow input
-  document.addEventListener("keydown", function(event) {
+  $(document).keydown(function(event) {
     var activeImgEl = $("img.active")
 
     if(event.which == 37){
