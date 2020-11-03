@@ -1,31 +1,18 @@
 $(document).ready(function(){
 
   //click input
-  $(".prev").click(function(){
-    var activeImgEl = $("img.active")
-    activeImgEl.removeClass("active")
-    if(activeImgEl.hasClass("first")){
-      $("img.last").addClass("active")
 
-    }else{
-      activeImgEl.prev().addClass("active")
-    }
+  $(".prev").click(function(){
+
+    backward("img.active")
 
   })
-
 
   $(".next").click(function(){
-    var activeImgEl = $("img.active")
-    activeImgEl.removeClass("active")
-    if(activeImgEl.hasClass("last")){
-      $("img.first").addClass("active")
 
-    }else{
-      activeImgEl.next().addClass("active")
-    }
+    forward("img.active")
 
   })
-
 
 
 
@@ -60,7 +47,6 @@ $(document).ready(function(){
 
     }
 
-
   })
 
 })
@@ -69,18 +55,3 @@ $(document).ready(function(){
 document.addEventListener("keydown", function(event) {
   console.log(event.which);
 })
-
-
-
-
-// $(document).bind('keydown', 'left', function() {
-//   var activeImgEl = $("img.active")
-//   activeImgEl.removeClass("active")
-//   if(activeImgEl.hasClass("first")){
-//     $("img.last").addClass("active")
-//
-//   }else{
-//     activeImgEl.prev().addClass("active")
-//   }
-//
-//
