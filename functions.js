@@ -22,10 +22,10 @@ function forward(){
   activeEl.removeClass("active");
 
   if(activeEl.hasClass("last")){
-    firstEl.addClass("active")
+    firstEl.addClass("active");
 
   }else{
-    activeEl.next().addClass("active")
+    activeEl.next().addClass("active");
   }
 
 }
