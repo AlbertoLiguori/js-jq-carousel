@@ -1,11 +1,12 @@
-function backward(el){
+function backward(){
 
-  var activeEl = $(el);
+  var activeEl = $("img.active , .ico.active");
+  var lastEl = $("img.last, .ico.last");
 
   activeEl.removeClass("active");
 
   if(activeEl.hasClass("first")){
-    $("img.last, .ico.last").addClass("active");
+    lastEl.addClass("active");
 
   }else{
     activeEl.prev().addClass("active");
@@ -13,17 +14,18 @@ function backward(el){
 
 }
 
-function forward(el){
+function forward(){
 
-  var activeEl = $(el);
+  var activeEl = $("img.active , .ico.active");
+  var firstEl = $("img.first, .ico.first");
 
   activeEl.removeClass("active");
 
   if(activeEl.hasClass("last")){
-    $("img.first, .ico.first").addClass("active");
+    firstEl.addClass("active")
 
   }else{
-    activeEl.next().addClass("active");
+    activeEl.next().addClass("active")
   }
 
 }

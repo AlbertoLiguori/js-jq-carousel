@@ -1,16 +1,16 @@
 $(document).ready(function(){
 
-  //click input
+  //Click input
 
   $(".prev").click(function(){
 
-    backward("img.active , .ico.active");
+    backward();
 
   })
 
   $(".next").click(function(){
 
-    forward("img.active,.ico.active");
+    forward();
 
   })
 
@@ -19,13 +19,13 @@ $(document).ready(function(){
 
     if(event.which == 37){
 
-      backward("img.active , .ico.active");
+      backward();
 
     }
 
     else if(event.which == 39){
 
-      forward("img.active,.ico.active");
+      forward();
 
     }
 
