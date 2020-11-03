@@ -5,12 +5,15 @@ $(document).ready(function(){
   $(".prev").click(function(){
 
     backward("img.active")
+    backward(".ico.active")
+
 
   })
 
   $(".next").click(function(){
 
     forward("img.active")
+    forward(".ico.active")
 
   })
 
