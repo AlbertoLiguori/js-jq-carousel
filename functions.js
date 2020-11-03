@@ -5,7 +5,7 @@ function backward(el){
   activeEl.removeClass("active")
 
   if(activeEl.hasClass("first")){
-    $("img.last").addClass("active")
+    $("img.last, .ico.last").addClass("active")
 
   }else{
     activeEl.prev().addClass("active")
@@ -20,7 +20,7 @@ function forward(el){
   activeEl.removeClass("active")
 
   if(activeEl.hasClass("last")){
-    $("img.first").addClass("active")
+    $("img.first, .ico.first").addClass("active")
 
   }else{
     activeEl.next().addClass("active")

@@ -4,16 +4,16 @@ $(document).ready(function(){
 
   $(".prev").click(function(){
 
-    backward("img.active")
-    backward(".ico.active")
+    backward("img.active , .ico.active")
+    // backward(".ico.active")
 
 
   })
 
   $(".next").click(function(){
 
-    forward("img.active")
-    forward(".ico.active")
+    forward("img.active,.ico.active")
+    // forward(".ico.active")
 
   })
 
@@ -26,27 +26,13 @@ $(document).ready(function(){
 
     if(event.which == 37){
 
+      backward("img.active , .ico.active")
 
-      activeImgEl.removeClass("active")
-
-      if(activeImgEl.hasClass("first")){
-        $("img.last").addClass("active")
-
-      }else{
-        activeImgEl.prev().addClass("active")
-      }
 
     }
     else if(event.which == 39){
 
-      activeImgEl.removeClass("active")
-
-      if(activeImgEl.hasClass("last")){
-        $("img.first").addClass("active")
-
-      }else{
-        activeImgEl.next().addClass("active")
-      }
+      forward("img.active,.ico.active")
 
     }
 
